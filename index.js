@@ -26,4 +26,4 @@ io.on("connection", (socket) => {
     })
 })
 
-http.listen(3000,() => console.log("running1"))
+http.listen(process.env.PORT || 3000,() => console.log("running1"))
