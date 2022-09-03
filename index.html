@@ -4,6 +4,13 @@
         <script src="/socket.io/socket.io.js"></script>
         <script>
             var socket = io()
+            var user = {
+                "name": prompt("Username: "),
+                "x": 0,
+                "y": 0
+            }
+            // print hello
+            
             socket.on("num", (num) => {
                 document.getElementById("users").innerHTML = "Users: " + num
             })
